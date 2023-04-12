@@ -107,7 +107,6 @@ public class DeveloperView {
     public void getAllDevelopers(){
         for(Developer d: developerController.getAll())
             System.out.println(d);
-        //System.out.println(developerController.getAll());
     }
 
     public void updateDeveloper(){

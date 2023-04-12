@@ -1,7 +1,7 @@
 package org.example.controller;
 
 import org.example.model.Skill;
-import org.example.repository.GsonSkillRepositoryImpl;
+import org.example.repository.gson.GsonSkillRepositoryImpl;
 import org.example.repository.SkillRepository;
 
 import java.util.List;

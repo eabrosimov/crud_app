@@ -1,7 +1,7 @@
 package org.example.controller;
 
 import org.example.model.Specialty;
-import org.example.repository.GsonSpecialtyRepositoryImpl;
+import org.example.repository.gson.GsonSpecialtyRepositoryImpl;
 import org.example.repository.SpecialtyRepository;
 
 import java.util.List;

@@ -2,7 +2,7 @@ package org.example.controller;
 
 import org.example.model.Developer;
 import org.example.repository.DeveloperRepository;
-import org.example.repository.GsonDeveloperRepositoryImpl;
+import org.example.repository.gson.GsonDeveloperRepositoryImpl;
 
 import java.util.List;
 
@@ -21,11 +21,11 @@ public class DeveloperController {
         developer.setFirstName(clearedFirstName);
         developer.setLastName(clearedLastName);
 
-        List<Developer> allDevelopers = developerRepository.getAll();
-        if(allDevelopers.size() == 0)
+        List<Developer> allDev = developerRepository.getAll();
+        if(allDev.size() == 0)
             developer.setId(1);
         else{
-            int id = allDevelopers.get(allDevelopers.size() - 1).getId() + 1;
+            int id = allDev.get(allDev.size() - 1).getId() + 1;
             developer.setId(id);
         }
 
